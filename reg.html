@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        span{
+        .mani{
             margin-left: 240px;
             display: none;
         }
@@ -32,29 +33,43 @@
         .w{
           margin-left: 188px;
         }
+
     </style>
 </head>
-<body>
+  <body>
+  <div class="wrapper">
+    <span class="a"></span>
+    <span class="b"></span>
+    <span class="c"></span>
+    <span class="d"></span>
+    <span class="e"></span>
+    <span class="f"></span>
+    <span class="g"></span>
+    <span class="h"></span>
+    <span class="i"></span>
+    <span class="j"></span>
+</div> 
   <form>
-    <h2 style="text-align:center;color:green";>Register Here</h2>
-    <label>Username</label>
+    <h2 style="text-align:center;color:orange";>Register Here</h2>
+    <label style="color: white;">Username</label>
         <input  class="z" type="username" placeholder="Enter username"><br>
-         <span>username can't blank</span><br>
+         <span class="mani">username can't blank</span><br>
 
-        <label>Password</label>
+        <label style="color: white;">Password</label>
       <input class="y"type="password" placeholder="Enter password"><br>
-        <span>password can't blank</span> <br>
+        <span class="mani">password can't blank</span> <br>
         
-        <label>Confirm Password</label>
+        <label style="color: white;">Confirm Password</label>
         <input class="x" type="Password" placeholder="Enter confirm Password"><br>
-        <span>confirmpassword can't blank</span><br>
+        <span class="mani">confirmpassword can't blank</span><br>
   
-       <label for>Email</label>
+       <label style="color: white;">Email</label>
        <input class="w"type="email"placeholder="Enter email"><br>
-        <span>email can't blank</span><br>
+        <span class="mani">email can't blank</span><br>
 
         <input type="submit" value="Register">
         </form>
+        </body>
     <script>
 
         console.log(document.forms)
@@ -106,7 +121,5 @@
         e.target[3].value="";
 
      })
-
     </script>
-</body>
 </html>

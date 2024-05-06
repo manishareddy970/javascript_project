@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
   </head>
   <style>
     #countdown {
       font-size: 30px;
       margin-left: 200px;
     }
-    div:hover {
-      transform: scale(1.1);
-    }
+     div:hover{
+        transform: scale(1.1);
+     }
   </style>
   <body>
-    <div id="countdown">0:20</div>
+    <div id="countdown">0:50</div>
   </body>
   <script>
 
@@ -25,7 +26,7 @@
     a.innerText = "Welcome To Bidding Zone";
     a.setAttribute(
       "style",
-      "text-align:center;font-style:italic;color:seagreen;"
+      "text-align:center;font-style:italic;color:black;"
     );
 
     var div1 = document.createElement("div");
@@ -151,7 +152,7 @@
     btn3.innerText = "Bid";
     btn3.setAttribute("style", "margin-left:90px;margin-top:20px;width:80px");
 
-    let seconds = 20;
+    let seconds = 50;
     countdown();
     var arr1 = [];
     document.forms[0].addEventListener("submit", function (e) {
